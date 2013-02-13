@@ -138,6 +138,10 @@ header ul a {
   height:40px;
 }
 
+p.view {
+  color:#222;
+}
+
 strong {
   color:#222;
   font-weight:700;
@@ -182,6 +186,21 @@ footer {
   position:fixed;
   bottom:50px;
 }
+
+.releaseVersion {
+    font-weight: bold;
+    color: #666;
+}
+.releaseDate {
+    color: #666;
+}
+.releaseTime {
+    color: #967836;
+}
+.releaseBody p {
+}
+
+
 
 @media print, screen and (max-width: 960px) {
   
