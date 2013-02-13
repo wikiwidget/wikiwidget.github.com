@@ -1,2 +1,0 @@
-wikiwidget.github.com
-=====================
