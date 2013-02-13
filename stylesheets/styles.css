@@ -191,6 +191,9 @@ footer {
     font-weight: bold;
     color: #666;
 }
+.releaseVersion a {
+  font-weight:bold;
+}
 .releaseDate {
     color: #666;
 }
@@ -199,7 +202,6 @@ footer {
 }
 .releaseBody p {
 }
-
 
 
 @media print, screen and (max-width: 960px) {
