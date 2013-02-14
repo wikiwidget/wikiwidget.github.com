@@ -11,6 +11,19 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    
+    <!-- Google Analytics -->    
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38435857-1]);
+      _gaq.push(['_trackPageview']);
+  
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -19,7 +32,7 @@
         <p>A Dashboard widget for browsing the free, user-created encyclopedia, Wikipedia. Search, view and edit articles right from the Dashboard, complete with pictures and links.</p>
         <hr/>
         <p class="view">Main Page</p>
-        <p class="view"><a href="downloads/Wikipedia.zip">Download</a></p>
+        <p class="view"><a href="downloads/Wikipedia.zip" onclick="_gaq.push(['_trackEvent', 'Downloads', 'Latest', 'Sidebar']);" >Download</a></p>
         <p class="view"><a href="changelog.html">Change log</a></p>
         <p class="view"><a href="https://github.com/wikiwidget/wikipedia-widget">Get Source Code</a></p>
         
@@ -28,7 +41,7 @@
       <section>
         <p><img src="http://www.whatsinthehouse.com/widgets/screenshot.png" alt="Wikipedia Widget in action"></p>
 
-<p><a href="downloads/Wikipedia.zip">Download</a></p>
+<p><a href="downloads/Wikipedia.zip" onclick="_gaq.push(['_trackEvent', 'Downloads', 'Latest', 'Main Page']);">Download</a></p>
 
 <h2>Features:</h2>
 
@@ -68,17 +81,9 @@
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
+    
+    <!-- Mobile browser support -->
     <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-38435857-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
 
   </body>
 </html>
